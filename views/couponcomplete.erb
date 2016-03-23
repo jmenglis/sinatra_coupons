@@ -1,0 +1,26 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Here is the list you have created:</h3>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+          <ul>
+            <% @coupons.each do |item| %>
+              <li>
+                <%= item.title %> - <%= item.description %> - <%= item.product %> - <%= item.discount_price %> - <%= item.expiration_date %>
+              </li>
+            <% end %>
+          </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+      <h3><a href='/coupon'> Head Back To Create Another One</a></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
